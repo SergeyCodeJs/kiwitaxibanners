@@ -38,7 +38,6 @@ addEventListeners() {
     // add event listener for banners to stop auto slides change when mouseenter and resume when mouseleave
 
     banner.addEventListener('mouseenter', () => {
-      console.log('cleared')
       clearInterval(this.interval)
     });
     banner.addEventListener('mouseleave', () => {
