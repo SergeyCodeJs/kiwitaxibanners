@@ -1,26 +1,67 @@
-let slideNumber = -1;
-const slides = document.querySelectorAll('section');
-const length = slides.length - 1;
+class Slider {
+constructor(dataBannerAttribute) {
+  this.banners = document.querySelectorAll(dataBannerAttribute);
+  this.bannersQuantity = this.banners.length;
+  this.currentBanner = 0;
+  this.changeBannersTime = 3000;
+  this.interval = null;
+}
 
+init() {
+this.closeAllBanners();
+this.showCurrentBanner();
+this.addEventListeners();
+this.interval = setInterval(this.changeBannerByTime, this.changeBannersTime);
+}
 
-function hideAll(slides) {
-    slides.forEach(slide => {
-      slide.classList.add('animate__animated', 'animate__fadeInLeft');
-      slide.style.display = 'none';
+closeAllBanners() {
+  this.banners.forEach(banner => {
+    banner.style.display = "none";
+  })
+}
+
+showCurrentBanner() {
+  this.banners[this.currentBanner].style.display = "block";
+}
+
+addEventListeners() {
+  this.banners.forEach(banner => {
+    const buttons = banner.querySelector('.stages').children;
+    
+    // add event listener for buttons to change slides onclick
+    Array.from(buttons).forEach((button, id) => {
+      if (!button.classList.contains('stages__active')) {
+        button.addEventListener('click', this.changeBanner.bind(this,id))
+      }
     })
-}
-  
-function showSlide() {
-  if(slideNumber < length) {
-    slideNumber++;
-  } else {
-    slideNumber = 0;
-  }
-  
-  slides[slideNumber].style.display = 'block';
+
+    // add event listener for banners to stop auto slides change when mouseenter and resume when mouseleave
+
+    banner.addEventListener('mouseenter', () => {
+      console.log('cleared')
+      clearInterval(this.interval)
+    });
+    banner.addEventListener('mouseleave', () => {
+      this.interval = setInterval(this.changeBannerByTime, this.changeBannersTime)
+    });
+  });
 }
 
-hideAll(slides)
-showSlide();
-setTimeout(showSlide, 1000);
-setTimeout(showSlide, 2000);
+changeBanner(id) {
+  this.currentBanner = id;
+  this.closeAllBanners();
+  this.showCurrentBanner();
+}
+
+changeBannerByTime = () => {
+  this.currentBanner++;
+  if (this.currentBanner >= this.bannersQuantity) {
+    this.currentBanner = 0;
+  }
+  this.closeAllBanners();
+  this.showCurrentBanner();
+}
+}
+
+const slider = new Slider('[data-banner]');
+slider.init()

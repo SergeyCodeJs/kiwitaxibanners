@@ -13,14 +13,15 @@
 <body>
   <main>
     <article>
-      <section id="banner1">
+      <section id="banner1" data-banner>
         <div class="banner banner--center">
           <div class="splash splash-left"></div>
           <div class="splash splash-right"></div>
           <div class="circle-medium"></div>
           <div class="stages">
-            <div class="stages__no-move"></div>
-            <div class="stages__move"></div>
+            <div class="stages__active"></div>
+            <div class="stages__inactive"></div>
+            <div class="stages__inactive"></div>
           </div>
           <div class="photo-description__wrapper">
             <div class="photo">
@@ -28,8 +29,10 @@
                 <div class="photo__splash"></div>
               </div>
               <div class="photo__circle-big"></div>
-              <div><p class="photo__name">Иван Озборн</p></div>
-              <div><p class="photo__profession">Водитель в Париже</p></div>
+              <div class="driver__wrapper">
+                <div><p class="photo__name">Иван Озборн</p></div>
+                <div><p class="photo__profession">Водитель в Париже</p></div>
+              </div>
             </div>
             <div class="description">
               <div class="description__wrapper">
@@ -39,20 +42,23 @@
                   </div>
                   <div class="description__circle-medium"></div>
                 </div>
-                <div class="description__will-do">Заботливо встретят и сопроводят до отеля или аэропорта.</div>
+                <div class="will-do__wrapper">
+                  <div class="description__will-do"><p>Заботливо встретят и сопроводят до отеля или аэропорта.</p></div>
+              </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section id="banner2">
+      <section id="banner2" data-banner>
         <div class="banner banner--center">
           <div class="splash splash-left"></div>
           <div class="splash splash-right"></div>
           <div class="circle-medium"></div>
           <div class="stages">
-            <div class="stages__no-move"></div>
-            <div class="stages__move move2"></div>
+            <div class="stages__inactive"></div>
+            <div class="stages__active"></div>
+            <div class="stages__inactive"></div>
           </div>
           <div class="photo-description__wrapper">
             <div class="photo">
@@ -60,8 +66,10 @@
                 <div class="photo__splash"></div>
               </div>
               <div class="photo__circle-big"></div>
-              <div><p class="photo__name">Василий Кандинский</p></div>
-              <div><p class="photo__profession">Водитель в Барселоне</p></div>
+              <div class="driver__wrapper">
+                <div><p class="photo__name">Василий Кандинский</p></div>
+                <div><p class="photo__profession">Водитель в Барселоне</p></div>
+              </div>
             </div>
             <div class="description">
               <div class="description__wrapper">
@@ -71,21 +79,23 @@
                   </div>
                   <div class="description__circle-medium"></div>
                 </div>
-                <div class="description__will-do">Познакомят вас с городом:</div>
-                <div class="description__will-do">подскажут интересные места и поделятся советами.</div>
+                <div class="will-do__wrapper">
+                  <div class="description__will-do"><p>Познакомят вас с городом: подскажут интересные места и поделятся советами.</p></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section id="banner3">
+      <section id="banner3" data-banner>
         <div class="banner banner--center">
           <div class="splash splash-left"></div>
           <div class="splash splash-right"></div>
           <div class="circle-medium"></div>
           <div class="stages">
-            <div class="stages__no-move"></div>
-            <div class="stages__move move3"></div>
+            <div class="stages__inactive"></div>
+            <div class="stages__inactive"></div>
+            <div class="stages__active"></div>
           </div>
           <div class="photo-description__wrapper">
             <div class="photo">
@@ -93,8 +103,10 @@
                 <div class="photo__splash"></div>
               </div>
               <div class="photo__circle-big"></div>
-              <div><p class="photo__name">Майкл Лебовски</p></div>
-              <div><p class="photo__profession">Водитель в Копенгагене</p></div>
+              <div class="driver__wrapper">
+                <div><p class="photo__name">Майкл Лебовски</p></div>
+                <div><p class="photo__profession">Водитель в Копенгагене</p></div>
+              </div>
             </div>
             <div class="description">
               <div class="description__wrapper">
@@ -104,7 +116,9 @@
                   </div>
                   <div class="description__circle-medium"></div>
                 </div>
-                <div class="description__will-do">Вежливо общаются и всегда в хорошем настроении.</div>
+                <div class="will-do__wrapper">
+                  <div class="description__will-do"><p>Вежливо общаются и всегда в хорошем настроении.</p></div>
+                </div>
               </div>
             </div>
           </div>

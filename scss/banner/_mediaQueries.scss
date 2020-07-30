@@ -1,0 +1,212 @@
+
+@media only screen
+and (min-width: 670px)
+and (max-width: 1000px) {
+  .banner {
+    width: 90.364583333%;
+  }
+
+  .photo-description__wrapper {
+    padding: 30px 13.000977517% 0 12%;
+    width: 67%;
+  }
+
+  .description {
+    margin-left: 8.5%;
+  }
+
+  .description__dots {
+    top: 87px;
+    left: -11%;
+    z-index: -1;
+  }
+
+  .description__circle-medium {
+    
+    right: -19%;
+    left: initial;
+  }
+
+  .photo__name {
+    position: relative;
+    z-index: 100;
+  }
+}
+
+.description__will-do {
+  display: inline;
+  min-width: 393px;
+
+  p {
+    display: inline;
+  }
+}
+
+
+@media only screen
+and (min-width: 320px)
+and (max-width: 670px) {
+  .description__dots, .splash, .photo__splash {
+    display: none;
+  }
+
+  .banner {
+    width: 70.4%;
+  }
+
+  .photo-description__wrapper {
+    flex-direction: column;
+    
+  }
+
+  .photo {
+    order: 2;
+    margin-left: 8.5%;
+  }
+
+  .photo-description__wrapper {
+    padding: 16px 10.133333333% 0 6.133333333%;
+    width: 76.8939393939%;
+  }
+
+  .description__drivers {
+    margin-bottom: 8px;
+  }
+
+  .photo {
+    width: 52px;
+    height: 64px;
+    margin-left: 60px;
+
+    &__img {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+    }
+  }
+
+  .photo__circle-big {
+    width: 59px;
+    height: 59px;
+    bottom: -8px;
+    left: -17px;
+    top: initial;
+    right: initial;
+  }
+
+  .will-do__wrapper {
+    margin-bottom: 16px;
+  }
+
+  .description__will-do {
+    display: inline;
+  }
+
+  .driver__wrapper {
+    position: absolute;
+    bottom: -15px;
+    left: 60px;
+  }
+
+  .stages {
+    bottom: 13px;
+  }
+
+  .description__circle-medium {
+    top: 22px;
+    right: 0%;
+    left: initial;
+  }
+
+  .circle-medium {
+    top: 116px;
+    right: 33%;
+  }
+
+  .description {
+    margin-left: 0;
+  }
+
+  
+}
+
+
+/* Mobile ----------- */
+@media only screen
+and (min-width: 320px)
+and (max-width: 480px) {
+  .banner {
+    height: 200px;
+  }
+
+  .photo-description__wrapper {
+    padding: 16px 10.133333% 0 7.133333%;
+  }
+
+  .description__drivers {
+    font-size: 14px;
+  }
+
+  .description__will-do {
+    font-size: 10px;
+    min-width: 213px;
+
+    p {
+      display: block;
+      min-width: 213px;
+      line-height: 10px;
+    }
+  }
+
+  .description__wrapper {
+    min-width: initial;
+    max-width: initial;
+  }
+
+  .description__circle-medium {
+    width: 5px;
+    height: 5px;
+    top: 17px;
+    left: 104%;
+  }
+
+  .circle-medium {
+    width: 8px;
+    height: 8px;
+    top: 81px;
+    right: 19%;
+  }
+
+  .photo {
+    margin-left: 2.636%;
+
+    &__name, &__profession {
+      font-size: 10px;
+    }
+  }
+}
+
+@media only screen
+and (min-width: 320px)
+and (max-width: 350px) {
+  .description__circle-medium {
+    left: 99%;
+  }
+}
+
+@media only screen
+and (min-width: 320px)
+and (max-width: 330px) {
+  .description__circle-medium {
+    left: 95%;
+  }
+}
+
+@media only screen
+and (min-width: 320px)
+and (max-width: 325px) {
+
+  .description__will-do p {
+    min-width: 200px;
+}
+}
