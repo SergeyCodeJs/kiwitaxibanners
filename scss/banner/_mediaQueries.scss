@@ -181,10 +181,14 @@ and (max-width: 480px) {
   }
 
   .photo {
-    margin-left: 2.636%;
+    margin-left: 9%;
 
     &__name, &__profession {
       font-size: 10px;
+    }
+
+    &__circle-big {
+      left: -16px;
     }
   }
 

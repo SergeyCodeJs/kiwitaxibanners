@@ -413,10 +413,13 @@ body {
     right: 19%;
   }
   .photo {
-    margin-left: 2.636%;
+    margin-left: 9%;
   }
   .photo__name, .photo__profession {
     font-size: 10px;
+  }
+  .photo__circle-big {
+    left: -16px;
   }
   .driver__wrapper {
     bottom: -9px;
