@@ -15,7 +15,7 @@
 .circle-medium {
   position: absolute;
   top: 167px;
-  right: 115px;
+  right: 144px;
   width: 15px;
   height: 15px;
   background: rgba(251, 178, 22, 0.6);;
@@ -56,9 +56,8 @@
     position: relative;
     width: 106px;
     height: 117px;
-    
     z-index: 2;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   &__url1 {
@@ -90,8 +89,8 @@
     font-style: normal;
     font-weight: bold;
     font-size: 11px;
-    line-height: 0px;
-    margin: 0;
+    line-height: 12px;
+    margin: 0 0 2px 0;
   }
 
   &__profession {
@@ -101,7 +100,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 11px;
-    line-height: 0px; 
+    line-height: 12px; 
     margin: 0;
   }
 

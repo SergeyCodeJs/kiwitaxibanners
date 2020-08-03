@@ -1,4 +1,3 @@
-
 @media only screen
 and (min-width: 670px)
 and (max-width: 1000px) {
@@ -17,14 +16,23 @@ and (max-width: 1000px) {
 
   .description__dots {
     top: 87px;
-    left: -11%;
-    z-index: -1;
+    left: -15%;
+    z-index: -9;
   }
 
   .description__circle-medium {
-    
-    right: -19%;
+    top: 12px;
+    right: -26%;
     left: initial;
+  }
+
+  .circle-medium {
+    top: 151px;
+    right: 166px;
+  }
+
+  .photo {
+    z-index: 9;
   }
 
   .photo__name {
@@ -34,8 +42,7 @@ and (max-width: 1000px) {
 }
 
 .description__will-do {
-  display: inline;
-  min-width: 393px;
+  max-width: 309px;
 
   p {
     display: inline;
@@ -56,17 +63,13 @@ and (max-width: 670px) {
 
   .photo-description__wrapper {
     flex-direction: column;
-    
+    padding: 16px 10.133333333% 0 8.7%;
+    width: 76.8939393939%;
   }
 
   .photo {
     order: 2;
     margin-left: 8.5%;
-  }
-
-  .photo-description__wrapper {
-    padding: 16px 10.133333333% 0 6.133333333%;
-    width: 76.8939393939%;
   }
 
   .description__drivers {
@@ -154,7 +157,7 @@ and (max-width: 480px) {
     p {
       display: block;
       min-width: 213px;
-      line-height: 10px;
+      line-height: 17px;
     }
   }
 
@@ -183,6 +186,10 @@ and (max-width: 480px) {
     &__name, &__profession {
       font-size: 10px;
     }
+  }
+
+  .driver__wrapper {
+    bottom: -9px;
   }
 }
 

@@ -62,7 +62,7 @@ body {
 .circle-medium {
   position: absolute;
   top: 167px;
-  right: 115px;
+  right: 144px;
   width: 15px;
   height: 15px;
   background: rgba(251, 178, 22, 0.6);
@@ -109,7 +109,7 @@ body {
   width: 106px;
   height: 117px;
   z-index: 2;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .photo__url1 {
@@ -141,8 +141,8 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 11px;
-  line-height: 0px;
-  margin: 0;
+  line-height: 12px;
+  margin: 0 0 2px 0;
 }
 
 .photo__profession {
@@ -152,7 +152,7 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 11px;
-  line-height: 0px;
+  line-height: 12px;
   margin: 0;
 }
 
@@ -277,12 +277,20 @@ body {
   }
   .description__dots {
     top: 87px;
-    left: -11%;
-    z-index: -1;
+    left: -15%;
+    z-index: -9;
   }
   .description__circle-medium {
-    right: -19%;
+    top: 12px;
+    right: -26%;
     left: initial;
+  }
+  .circle-medium {
+    top: 151px;
+    right: 166px;
+  }
+  .photo {
+    z-index: 9;
   }
   .photo__name {
     position: relative;
@@ -291,8 +299,7 @@ body {
 }
 
 .description__will-do {
-  display: inline;
-  min-width: 393px;
+  max-width: 309px;
 }
 
 .description__will-do p {
@@ -311,16 +318,14 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 16px 10.133333333% 0 8.7%;
+    width: 76.8939393939%;
   }
   .photo {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
     margin-left: 8.5%;
-  }
-  .photo-description__wrapper {
-    padding: 16px 10.133333333% 0 6.133333333%;
-    width: 76.8939393939%;
   }
   .description__drivers {
     margin-bottom: 8px;
@@ -389,7 +394,7 @@ body {
   .description__will-do p {
     display: block;
     min-width: 213px;
-    line-height: 10px;
+    line-height: 17px;
   }
   .description__wrapper {
     min-width: initial;
@@ -412,6 +417,9 @@ body {
   }
   .photo__name, .photo__profession {
     font-size: 10px;
+  }
+  .driver__wrapper {
+    bottom: -9px;
   }
 }
 
