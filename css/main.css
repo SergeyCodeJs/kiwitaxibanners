@@ -50,7 +50,7 @@ body {
   height: 232px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 4px 10px #C4C4C4;
-          box-shadow: 0px 4px 10px #C4C4C4;
+  box-shadow: 0px 4px 10px #C4C4C4;
   border-radius: 8px;
 }
 
@@ -94,8 +94,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .photo {
@@ -230,8 +230,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 163px;
   height: 3px;
   bottom: 37px;
@@ -316,15 +316,15 @@ body {
   .photo-description__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     padding: 16px 10.133333333% 0 8.7%;
     width: 76.8939393939%;
   }
   .photo {
     -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    -ms-flex-order: 2;
+    order: 2;
     margin-left: 8.5%;
   }
   .description__drivers {

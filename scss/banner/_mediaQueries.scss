@@ -62,13 +62,18 @@ and (max-width: 670px) {
   }
 
   .photo-description__wrapper {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 16px 10.133333333% 0 8.7%;
     width: 76.8939393939%;
   }
 
   .photo {
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
     margin-left: 8.5%;
   }
 
